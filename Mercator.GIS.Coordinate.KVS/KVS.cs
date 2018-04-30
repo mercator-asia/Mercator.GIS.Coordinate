@@ -91,18 +91,18 @@ namespace Mercator.GIS.Coordinate.KVS
                 coordinateNode.AppendChild(referenceNode);
 
                 var pixelLongitudeNode = document.CreateElement("Longitude");
-                pixelLongitudeNode.InnerText = sourceCoordinates[i].Longitude.ToString();
+                pixelLongitudeNode.InnerText = sourceCoordinates[i].Longitude.ToDigitalString();
                 var pixelLatitudeNode = document.CreateElement("Latitude");
-                pixelLatitudeNode.InnerText = sourceCoordinates[i].Latitude.ToString();
-                pixelNode.AppendChild(pixelLongitudeNode);
+                pixelLatitudeNode.InnerText = sourceCoordinates[i].Latitude.ToDigitalString();
                 pixelNode.AppendChild(pixelLatitudeNode);
+                pixelNode.AppendChild(pixelLongitudeNode);
 
                 var referenceLongitudeNode = document.CreateElement("Longitude");
-                referenceLongitudeNode.InnerText = targetCoordinates[i].Longitude.ToString();
+                referenceLongitudeNode.InnerText = targetCoordinates[i].Longitude.ToDigitalString();
                 var referenceLatitudeNode = document.CreateElement("Latitude");
-                referenceLatitudeNode.InnerText = targetCoordinates[i].Latitude.ToString();
-                referenceNode.AppendChild(referenceLongitudeNode);
+                referenceLatitudeNode.InnerText = targetCoordinates[i].Latitude.ToDigitalString();
                 referenceNode.AppendChild(referenceLatitudeNode);
+                referenceNode.AppendChild(referenceLongitudeNode);
             }
 
             document.Save(kvsFileName);

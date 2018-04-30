@@ -167,6 +167,11 @@ namespace Mercator.GIS.Coordinate
             return Digital * Math.PI / 180;
         }
 
+        public string ToDigitalString()
+        {
+            return Digital.ToString();
+        }
+
         /// <summary>
         /// 小数形式转换为度°分′秒″
         /// </summary>
