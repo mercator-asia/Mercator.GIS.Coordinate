@@ -45,8 +45,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Mercator.Mathematics\LinearAlgebra\Mercator.Mathematics.LinearAlgebra.csproj">
-      <Project>{7a88fdac-c409-4d20-9ac3-020ea08e73cb}</Project>
+    <ProjectReference Include="..\..\Mercator.Mathematics.LinearAlgebra\Mercator.Mathematics.LinearAlgebra.csproj">
+      <Project>{1e8e508c-1dcb-4b0e-abfb-1575210f17c3}</Project>
       <Name>Mercator.Mathematics.LinearAlgebra</Name>
     </ProjectReference>
   </ItemGroup>

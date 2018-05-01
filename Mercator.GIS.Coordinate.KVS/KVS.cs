@@ -50,7 +50,7 @@ namespace Mercator.GIS.Coordinate.KVS
 
                     projection.LongitudeOfOrigin = (int)Math.Round(lng / 3) * 3;
                     double E, N;
-                    projection.Forward(lng, lat, out E, out N);
+                    projection.Forward(lat, lng, out E, out N);
 
                     switch (node.Name.ToLower())
                     {

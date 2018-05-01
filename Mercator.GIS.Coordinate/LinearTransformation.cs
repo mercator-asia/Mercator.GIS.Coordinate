@@ -21,10 +21,10 @@ namespace Mercator.GIS.Coordinate
         /// <returns></returns>
         public static Matrix GetTransformationParameter(List<HorizontalCoordinate> sourceCoordinates, List<HorizontalCoordinate> targetCoordinates)
         {
-            var X = new Matrix(4, 1);
-            var B = new Matrix(sourceCoordinates.Count * 2, 4);
-            var L = new Matrix(sourceCoordinates.Count * 2, 1);
-            var P = new Matrix(sourceCoordinates.Count * 2, sourceCoordinates.Count * 2);
+            var X = new Matrix(new double[4, 1]);
+            var B = new Matrix(new double[sourceCoordinates.Count * 2, 4]);
+            var L = new Matrix(new double[sourceCoordinates.Count * 2, 1]);
+            var P = new Matrix(new double[sourceCoordinates.Count * 2, sourceCoordinates.Count * 2]);
 
             for (int i = 0; i < sourceCoordinates.Count * 2; i++)
             {
